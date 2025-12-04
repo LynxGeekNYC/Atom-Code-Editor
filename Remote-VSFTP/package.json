@@ -1,0 +1,36 @@
+{
+  "name": "atom-vsftp",
+  "main": "./lib/atom-vsftp",
+  "version": "0.4.0",
+  "description": "VSFTP / FTP(S) integration for live editing, remote browsing, and uploads",
+  "keywords": [
+    "ftp",
+    "ftps",
+    "vsftp",
+    "remote",
+    "deploy",
+    "browser"
+  ],
+  "activationCommands": {
+    "atom-workspace": [
+      "atom-vsftp:connect",
+      "atom-vsftp:disconnect",
+      "atom-vsftp:upload-current-file",
+      "atom-vsftp:toggle-server-panel",
+      "atom-vsftp:download-remote-file",
+      "atom-vsftp:chmod-selected",
+      "atom-vsftp:delete-selected",
+      "atom-vsftp:rename-selected",
+      "atom-vsftp:download-dir-as-zip"
+    ]
+  },
+  "repository": "https://example.com/your-repo/atom-vsftp",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "basic-ftp": "^5.0.2",
+    "adm-zip": "^0.5.10"
+  }
+}
